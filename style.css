@@ -17,6 +17,7 @@ body , html{
     border-radius: 5px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     max-width: 380px;
+    overflow: hidden;
 }
 .title-text{
     display: flex;
@@ -27,6 +28,18 @@ body , html{
     width: 50%;
     font-size: 30px;
     font-weight: 600;
+}
+.form-content{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.inner{
+    display: flex;
+    width: 200%;
+}
+form{
+    width: 50%;
 }
 .feild input{
     width: 100%;
