@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body , html{
+    display: grid;
+    place-items: center;
+    height: 100%;
+    background: linear-gradient(to right,#bb0fe0,#00f5c0);
+    width: 100%;
+}
+.container{
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    max-width: 380px;
+}
+.title-text{
+    display: flex;
+    width: 200%;
+    text-align: center;
+}
+.title{
+    width: 50%;
+    font-size: 30px;
+    font-weight: 600;
+}
+.feild input{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    padding: 0 0 0 5px;
+    margin: 20px 0 0 0;
+    border: 1px solid #ccc;
+    border-bottom-width: 3px;
+    border-radius: 5px;
+    outline: none;
+}
+.feild input:focus{
+    border-color: #00f5c0;
+}
+.link-pass a , .link-signup a {
+    color: #bb0fe0;
+    text-decoration: none;
+}
+.link-pass a:hover , .link-signup a:hover{
+    text-decoration: underline;
+}
+.feild input[type = submit]{
+    border: none;
+    background: linear-gradient(to right,#bb0fe0,#00f5c0);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.feild input[type = submit]:hover{
+    background: linear-gradient(to right,#00f5c0,#bb0fe0);
+}
+.link-signup{
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
