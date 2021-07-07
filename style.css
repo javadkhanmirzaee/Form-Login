@@ -28,6 +28,45 @@ body , html{
     width: 50%;
     font-size: 30px;
     font-weight: 600;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.slide{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    z-index: 1;
+    position: relative;
+}
+.slider{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,#bb0fe0,#00f5c0);
+    left: 0;
+    border-radius: 5px;
+    z-index: -1;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+input[type = radio]{
+    display: none;
+}
+#signup:checked ~ .slider{
+    margin: 0 0 0 50%;
+}
+#signup:checked ~ .signup-S{
+    color: #fff;
+}
+#login:checked ~ .login-L{
+    color: #fff;
+}
+.signup-S , .login-L{
+    cursor: pointer;
 }
 .form-content{
     width: 100%;
@@ -40,6 +79,7 @@ body , html{
 }
 form{
     width: 50%;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
 .feild input{
     width: 100%;
